@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cambiando atributos</title>
+<script>
+function cambio()
+{
+	elemento=document.getElementById('foco');
+	if(elemento.src.match("foco_on"))
+	{
+	elemento.src="imagenes/foco_off.gif";
+}
+else
+{
+	elemento.src="imagenes/foco_on.gif";
+}
+}
+</script>
+<script>
+function cambio2()
+{
+	elemento=document.getElementById('puerta');
+	if(elemento.src.match("puerta_C"))
+	{
+	elemento.src="imagenes/puerta_A.gif";
+}
+else
+{
+	elemento.src="imagenes/puerta_C.gif";
+}
+}
+</script>
+</head>
+
+<body>
+<h1> Practica04</h1>
+<h2> Cambiando atributos </h2>
+<img id="foco" src="imagenes/foco_off.gif" width="100" height="180" onClick="cambio()">
+
+<p> Click an el foco para apagar o prender</p>
+
+<img id="puerta" src="imagenes/Puerta_A.gif" width="100" height="200" onClick="cambio2()">
+</body>
+</html>
